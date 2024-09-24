@@ -18,9 +18,9 @@ from bot.core.registrator import register_sessions
 
 import importlib.util
 
-curr_version = "2.5.0"
+curr_version = "1.0.0"
 
-version = requests.get("https://raw.githubusercontent.com/vanhbakaa/moonbix-bot/refs/heads/main/version")
+version = requests.get("https://raw.githubusercontent.com/sizifart/MoonbixBot/refs/heads/main/version")
 version_ = version.text.strip()
 if curr_version == version_:
     logger.info("<cyan>Your version is up to date!</cyan>")
@@ -29,8 +29,16 @@ else:
     sys.exit()
 start_text = f"""
 
-Version: {curr_version} 
-By: https://github.com/vanhbakaa                                                                                                                                                                                         
+███████╗██╗███████╗     ██████╗ ██████╗ ██████╗ ███████╗██████╗ 
+██╔════╝██║╚══███╔╝    ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔══██╗
+███████╗██║  ███╔╝     ██║     ██║   ██║██║  ██║█████╗  ██████╔╝
+╚════██║██║ ███╔╝      ██║     ██║   ██║██║  ██║██╔══╝  ██╔══██╗
+███████║██║███████╗    ╚██████╗╚██████╔╝██████╔╝███████╗██║  ██║
+╚══════╝╚═╝╚══════╝     ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+
+Moonbix BOT V {curr_version}
+Prepared and Developed by: F.Davoodi
+
 Select an action:
 
     1. Run clicker
