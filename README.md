@@ -1,0 +1,2 @@
+# MoonbixBot
+MoonbixBot App AutoClicker
